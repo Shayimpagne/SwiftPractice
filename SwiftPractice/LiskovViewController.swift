@@ -13,18 +13,50 @@ class LiskovViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let animal: Animal = Dog()
+        print(animal.voice())
+    }
+
+}
+
+protocol  {
+    
+}
+
+protocol BaseAnimalAction {
+    func move() -> String
+    func voice() -> String
+}
+
+class Animal: BaseAnimalAction {
+    func move() -> String {
+        return ""
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func voice() -> String {
+        return ""
     }
-    */
+    
+    
+}
 
+
+class Dog: Animal {
+    override func voice() -> String {
+        return "Gav gav"
+    }
+    
+    override func move() -> String {
+        return "Go"
+    }
+}
+
+class Bird: Animal {
+    override func voice() -> String {
+        return "4irik 4irik"
+    }
+    
+    override func move() -> String {
+        return "Fly"
+    }
 }
