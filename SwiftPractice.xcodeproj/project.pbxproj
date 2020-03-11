@@ -130,7 +130,10 @@
 			files = (
 				E9C4815B240EB8A900F3836F /* LaunchScreen.storyboard in Resources */,
 				E9C48158240EB8A900F3836F /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				E91A095524194D5A004B7EA6 /* ListViewController.xib in Resources */,
+=======
+>>>>>>> 197b5e8db4e93a98c985a806cfe2b8375ea5c632
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +144,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				E91A095424194D5A004B7EA6 /* ListViewController.swift in Sources */,
 				E9C4814F240EB8A800F3836F /* AppDelegate.swift in Sources */,
 				E91A095724194E57004B7EA6 /* ListView.swift in Sources */,
 				E91A095924194E61004B7EA6 /* ListModel.swift in Sources */,
+=======
+				E9C4814F240EB8A800F3836F /* AppDelegate.swift in Sources */,
+>>>>>>> 197b5e8db4e93a98c985a806cfe2b8375ea5c632
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
