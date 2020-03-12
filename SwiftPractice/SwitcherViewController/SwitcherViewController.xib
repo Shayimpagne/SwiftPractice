@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwitcherViewController" customModule="SwiftPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="SwitcherView" customModule="SwiftPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uAm-ux-vbs">
+                    <rect key="frame" x="16" y="60" width="382" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentedControlValueChanged:" destination="i5M-Pr-FkT" eventType="valueChanged" id="a3v-cM-OUV"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkd-sm-3tq">
+                    <rect key="frame" x="0.0" y="91" width="414" height="771"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1T-CW-nNA">
+                    <rect key="frame" x="0.0" y="91" width="414" height="771"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uAm-ux-vbs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8yF-d6-0oz"/>
+                <constraint firstItem="xkd-sm-3tq" firstAttribute="top" secondItem="uAm-ux-vbs" secondAttribute="bottom" id="LPa-Zo-ztf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xkd-sm-3tq" secondAttribute="trailing" id="MBY-h3-ZTg"/>
+                <constraint firstItem="A1T-CW-nNA" firstAttribute="top" secondItem="uAm-ux-vbs" secondAttribute="bottom" id="N7Q-fs-ps9"/>
+                <constraint firstItem="A1T-CW-nNA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P4K-BT-MXw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A1T-CW-nNA" secondAttribute="trailing" id="PIw-bz-mMf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uAm-ux-vbs" secondAttribute="trailing" constant="16" id="a5b-2P-Plm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xkd-sm-3tq" secondAttribute="bottom" id="epX-Xh-xtO"/>
+                <constraint firstItem="xkd-sm-3tq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fLb-vX-jhv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A1T-CW-nNA" secondAttribute="bottom" id="hEK-9b-CpB"/>
+                <constraint firstItem="uAm-ux-vbs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="sPD-Sh-IY0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="delegate" destination="-1" id="vVZ-yF-pvd"/>
+                <outlet property="firstView" destination="xkd-sm-3tq" id="R25-cr-jBg"/>
+                <outlet property="secondView" destination="A1T-CW-nNA" id="ONE-3E-XxB"/>
+                <outlet property="segmentedView" destination="uAm-ux-vbs" id="NCu-Hy-Dis"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>

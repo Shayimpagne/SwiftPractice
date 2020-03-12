@@ -15,6 +15,10 @@ class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let user = listModel.getUser() {
+            listView.setupHeader(with: user)
+        }
     }
     
 

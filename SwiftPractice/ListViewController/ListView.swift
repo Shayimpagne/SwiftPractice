@@ -30,6 +30,7 @@ class ListView: UIView {
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "tableViewCell")
         }
     }
+    @IBOutlet private weak var headerView: HeaderView!
     
     @IBAction private func listButtonPressed(_ sender: Any) {
         delegate.listButtonDidPressed()
@@ -53,6 +54,10 @@ class ListView: UIView {
         }
     }
     
+    func setupHeader(with data: HeaderDataProtocol) {
+        headerView.setupHeader(with: data)
+    }
+    
     
 }
 
@@ -67,6 +72,4 @@ extension ListView: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = user.cellName + " " + String(user.cellAge)
         return cell
     }
-    
-    
 }

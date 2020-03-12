@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90D447A241AA2E500BC2D9A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D4479241AA2E500BC2D9A /* HeaderView.swift */; };
+		E90D447C241AA79E00BC2D9A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D447B241AA79E00BC2D9A /* User.swift */; };
+		E90D447F241AAAB000BC2D9A /* SwitcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D447D241AAAB000BC2D9A /* SwitcherViewController.swift */; };
+		E90D4480241AAAB000BC2D9A /* SwitcherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90D447E241AAAB000BC2D9A /* SwitcherViewController.xib */; };
+		E90D4488241AAC2C00BC2D9A /* SwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D4487241AAC2C00BC2D9A /* SwitcherView.swift */; };
+		E90D448A241AAE5400BC2D9A /* SwitcherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D4489241AAE5400BC2D9A /* SwitcherModel.swift */; };
 		E91A095424194D5A004B7EA6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A095224194D5A004B7EA6 /* ListViewController.swift */; };
 		E91A095524194D5A004B7EA6 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A095324194D5A004B7EA6 /* ListViewController.xib */; };
 		E91A095724194E57004B7EA6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A095624194E57004B7EA6 /* ListView.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90D4479241AA2E500BC2D9A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E90D447B241AA79E00BC2D9A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E90D447D241AAAB000BC2D9A /* SwitcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherViewController.swift; sourceTree = "<group>"; };
+		E90D447E241AAAB000BC2D9A /* SwitcherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitcherViewController.xib; sourceTree = "<group>"; };
+		E90D4487241AAC2C00BC2D9A /* SwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherView.swift; sourceTree = "<group>"; };
+		E90D4489241AAE5400BC2D9A /* SwitcherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherModel.swift; sourceTree = "<group>"; };
 		E91A095224194D5A004B7EA6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E91A095324194D5A004B7EA6 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		E91A095624194E57004B7EA6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -39,6 +51,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E90D4481241AAAC400BC2D9A /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E91A095224194D5A004B7EA6 /* ListViewController.swift */,
+				E91A095324194D5A004B7EA6 /* ListViewController.xib */,
+				E91A095624194E57004B7EA6 /* ListView.swift */,
+				E91A095824194E61004B7EA6 /* ListModel.swift */,
+				E90D4483241AAAEE00BC2D9A /* Components */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		E90D4482241AAAD900BC2D9A /* SwitcherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E90D4485241AAB6200BC2D9A /* Components */,
+				E90D447D241AAAB000BC2D9A /* SwitcherViewController.swift */,
+				E90D447E241AAAB000BC2D9A /* SwitcherViewController.xib */,
+				E90D4487241AAC2C00BC2D9A /* SwitcherView.swift */,
+				E90D4489241AAE5400BC2D9A /* SwitcherModel.swift */,
+			);
+			path = SwitcherViewController;
+			sourceTree = "<group>";
+		};
+		E90D4483241AAAEE00BC2D9A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E90D4479241AA2E500BC2D9A /* HeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E90D4484241AAB0D00BC2D9A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E90D4486241AAB7900BC2D9A /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E90D4485241AAB6200BC2D9A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E90D4486241AAB7900BC2D9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E90D447B241AA79E00BC2D9A /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E9C48142240EB8A800F3836F = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +125,13 @@
 		E9C4814D240EB8A800F3836F /* SwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E90D4484241AAB0D00BC2D9A /* Common */,
+				E90D4482241AAAD900BC2D9A /* SwitcherViewController */,
+				E90D4481241AAAC400BC2D9A /* ListViewController */,
 				E9C4814E240EB8A800F3836F /* AppDelegate.swift */,
 				E9C48157240EB8A900F3836F /* Assets.xcassets */,
 				E9C48159240EB8A900F3836F /* LaunchScreen.storyboard */,
 				E9C4815C240EB8A900F3836F /* Info.plist */,
-				E91A095224194D5A004B7EA6 /* ListViewController.swift */,
-				E91A095324194D5A004B7EA6 /* ListViewController.xib */,
-				E91A095624194E57004B7EA6 /* ListView.swift */,
-				E91A095824194E61004B7EA6 /* ListModel.swift */,
 			);
 			path = SwiftPractice;
 			sourceTree = "<group>";
@@ -131,6 +197,7 @@
 				E9C4815B240EB8A900F3836F /* LaunchScreen.storyboard in Resources */,
 				E9C48158240EB8A900F3836F /* Assets.xcassets in Resources */,
 				E91A095524194D5A004B7EA6 /* ListViewController.xib in Resources */,
+				E90D4480241AAAB000BC2D9A /* SwitcherViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +209,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91A095424194D5A004B7EA6 /* ListViewController.swift in Sources */,
+				E90D447A241AA2E500BC2D9A /* HeaderView.swift in Sources */,
 				E9C4814F240EB8A800F3836F /* AppDelegate.swift in Sources */,
 				E91A095724194E57004B7EA6 /* ListView.swift in Sources */,
+				E90D4488241AAC2C00BC2D9A /* SwitcherView.swift in Sources */,
 				E91A095924194E61004B7EA6 /* ListModel.swift in Sources */,
 				E9C4814F240EB8A800F3836F /* AppDelegate.swift in Sources */,
+				E90D447C241AA79E00BC2D9A /* User.swift in Sources */,
+				E90D448A241AAE5400BC2D9A /* SwitcherModel.swift in Sources */,
+				E90D447F241AAAB000BC2D9A /* SwitcherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
