@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.layer.add(CATransition(), forKey: nil)
         window?.makeKeyAndVisible()
-        window?.rootViewController = SwitcherViewController()
+        window?.rootViewController = ContainerViewController()
         
         return true
     }

@@ -17,6 +17,8 @@ class SwitcherViewController: UIViewController {
         super.viewDidLoad()
         switcherView.setupColor(model.getColor(), model.switcherState)
     }
+    
+    
 
 }
 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerViewController" customModule="SwiftPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="input" destination="i5M-Pr-FkT" id="ZCs-Fx-MY6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ContainerView" customModule="SwiftPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RL-nB-Ama" userLabel="firstView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRA-tb-qZB" userLabel="secondView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KG-Am-lFW">
+                    <rect key="frame" x="154.5" y="433" width="105" height="30"/>
+                    <state key="normal" title="Show FirstView"/>
+                    <connections>
+                        <action selector="showFirstViewPressed:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="6zY-yr-TEC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BE-Zd-6Rl">
+                    <rect key="frame" x="143.5" y="479" width="127" height="30"/>
+                    <state key="normal" title="Show SecondView"/>
+                    <connections>
+                        <action selector="showSecondViewPressed:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="Bxd-wq-fet"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1BE-Zd-6Rl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4Fw-Jn-Fw9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XRA-tb-qZB" secondAttribute="bottom" id="5x2-nY-kbI"/>
+                <constraint firstItem="0KG-Am-lFW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LvB-qS-QgA"/>
+                <constraint firstItem="XRA-tb-qZB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="P4d-Tx-wce"/>
+                <constraint firstItem="0KG-Am-lFW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Whf-Et-0iR"/>
+                <constraint firstItem="1RL-nB-Ama" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XZ8-eD-cKu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1RL-nB-Ama" secondAttribute="trailing" id="bKQ-hb-1wl"/>
+                <constraint firstItem="1BE-Zd-6Rl" firstAttribute="top" secondItem="0KG-Am-lFW" secondAttribute="bottom" constant="16" id="cav-z9-zf6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XRA-tb-qZB" secondAttribute="trailing" id="dU5-1r-fzl"/>
+                <constraint firstItem="XRA-tb-qZB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fBZ-sD-fSE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1RL-nB-Ama" secondAttribute="bottom" id="oKB-xd-0jI"/>
+                <constraint firstItem="1RL-nB-Ama" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sXH-XB-Tjo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="firstView" destination="1RL-nB-Ama" id="fbc-bv-78N"/>
+                <outlet property="output" destination="-1" id="KAF-oh-R51"/>
+                <outlet property="secondView" destination="XRA-tb-qZB" id="rRG-gf-7x5"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>
